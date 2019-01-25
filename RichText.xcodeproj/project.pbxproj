@@ -13,6 +13,7 @@
 		040314C021FB05E8007A65D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040314BF21FB05E8007A65D9 /* Assets.xcassets */; };
 		040314C321FB05E8007A65D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040314C121FB05E8007A65D9 /* LaunchScreen.storyboard */; };
 		040314C621FB05E8007A65D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040314C521FB05E8007A65D9 /* main.m */; };
+		040314CF21FB078C007A65D9 /* NSString+zm_Highlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 040314CE21FB078C007A65D9 /* NSString+zm_Highlight.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		040314C221FB05E8007A65D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040314C421FB05E8007A65D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040314C521FB05E8007A65D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		040314CD21FB078C007A65D9 /* NSString+zm_Highlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+zm_Highlight.h"; sourceTree = "<group>"; };
+		040314CE21FB078C007A65D9 /* NSString+zm_Highlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+zm_Highlight.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		040314B521FB05E6007A65D9 /* RichText */ = {
 			isa = PBXGroup;
 			children = (
+				040314CC21FB0736007A65D9 /* RichText */,
 				040314B621FB05E6007A65D9 /* AppDelegate.h */,
 				040314B721FB05E6007A65D9 /* AppDelegate.m */,
 				040314B921FB05E6007A65D9 /* ViewController.h */,
@@ -67,6 +71,15 @@
 				040314C121FB05E8007A65D9 /* LaunchScreen.storyboard */,
 				040314C421FB05E8007A65D9 /* Info.plist */,
 				040314C521FB05E8007A65D9 /* main.m */,
+			);
+			path = RichText;
+			sourceTree = "<group>";
+		};
+		040314CC21FB0736007A65D9 /* RichText */ = {
+			isa = PBXGroup;
+			children = (
+				040314CD21FB078C007A65D9 /* NSString+zm_Highlight.h */,
+				040314CE21FB078C007A65D9 /* NSString+zm_Highlight.m */,
 			);
 			path = RichText;
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 				040314BB21FB05E6007A65D9 /* ViewController.m in Sources */,
 				040314C621FB05E8007A65D9 /* main.m in Sources */,
 				040314B821FB05E6007A65D9 /* AppDelegate.m in Sources */,
+				040314CF21FB078C007A65D9 /* NSString+zm_Highlight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58AX2C9KK3;
 				INFOPLIST_FILE = RichText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 58AX2C9KK3;
 				INFOPLIST_FILE = RichText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
