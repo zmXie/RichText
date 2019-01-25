@@ -31,12 +31,17 @@
 
 - (void)setupSubViews
 {
-    UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.separatorStyle = 0;
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:tableView];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -49,8 +54,30 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.textLabel.textAlignment = 1;
     NSString *text = _dataArray[indexPath.row];
-    cell.textLabel.attributedText = text.zm_highlight;
+    if (indexPath.section == 0) {
+        cell.textLabel.text = text;
+    } else {
+        cell.textLabel.attributedText = text.zm_highlight;
+    }
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 0.1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 40;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 40)];
+    label.textAlignment = 1;
+    label.text = section == 0 ? @"原数据" : @"高亮效果";
+    return label;
 }
 
 
