@@ -3,5 +3,5 @@
 
 
 ## 截图
-![图片一](https://github.com/zmXie/RichText/raw/master/highlight.png)
+![图片一](https://github.com/zmXie/RichText/raw/master/RichText/highlight.png)
 
