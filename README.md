@@ -2,6 +2,7 @@
 根据标签显示高亮 
 
 
-## 截图
-![图片一](https://github.com/zmXie/RichText/raw/master/RichText/highlight.png)
+##GIF动画演示
+![Flipboard playing multiple GIFs](https://github.com/zmXie/RichText/raw/master/RichText/highlight.gif)
+
 
