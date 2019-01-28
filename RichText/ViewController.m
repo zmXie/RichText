@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSString+zm_Highlight.h"
+#import "NSString+ZMRichText.h"
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 {
@@ -26,7 +26,7 @@
 
 - (void)setupData
 {
-    _dataArray = @[@"消<em>愁</em>",@"一杯敬<em>朝阳</em>，一杯敬<em>月光</em>",@"一杯敬<em>朝阳</em>，一杯敬<em>月光</em>",@"一杯敬<em>故乡</em>，一杯敬<em>远方</em>",@"一杯敬<em>明天</em>，一杯敬<em>过往</em>",@"一杯敬<em>自由</em>，一杯敬<em>死亡</em>",@"反正<em>喝</em>就完事了"];
+    _dataArray = @[@"消<em>愁</em>",@"一杯敬<em>朝阳</em>，一杯敬<em>月光</em>",@"一杯敬<em>朝阳</em>，一杯敬<em>月光</em>",@"一杯敬<em>故乡</em>，一杯敬<em>远方</em>",@"一杯敬<em>明天</em>，一杯敬<em>过往</em>",@"一杯敬<em>自由</em>，一杯敬<em>死亡</em>",@"喝[调皮]就[流汗]完[偷笑]事[呲牙]了[再见]"];
 }
 
 - (void)setupSubViews
@@ -57,7 +57,11 @@
     if (indexPath.section == 0) {
         cell.textLabel.text = text;
     } else {
-        cell.textLabel.attributedText = text.zm_highlight;
+        if (indexPath.row == _dataArray.count - 1) {
+            cell.textLabel.attributedText = text.zm_showEmoji;
+        } else {
+            cell.textLabel.attributedText = text.zm_tagHighlight;
+        }
     }
     return cell;
 }
@@ -76,7 +80,7 @@
 {
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, 40)];
     label.textAlignment = 1;
-    label.text = section == 0 ? @"原数据" : @"高亮效果";
+    label.text = section == 0 ? @"原数据" : @"显示效果";
     return label;
 }
 

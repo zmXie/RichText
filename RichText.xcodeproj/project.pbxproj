@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0402FF9C21FE96F3008F4A47 /* Faceexpression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0402FF9B21FE96F3008F4A47 /* Faceexpression.plist */; };
+		0402FFA521FEE5D5008F4A47 /* NSString+ZMRichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 0402FFA421FEE5D5008F4A47 /* NSString+ZMRichText.m */; };
 		040314B821FB05E6007A65D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 040314B721FB05E6007A65D9 /* AppDelegate.m */; };
 		040314BB21FB05E6007A65D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040314BA21FB05E6007A65D9 /* ViewController.m */; };
 		040314BE21FB05E6007A65D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040314BC21FB05E6007A65D9 /* Main.storyboard */; };
 		040314C021FB05E8007A65D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 040314BF21FB05E8007A65D9 /* Assets.xcassets */; };
 		040314C321FB05E8007A65D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040314C121FB05E8007A65D9 /* LaunchScreen.storyboard */; };
 		040314C621FB05E8007A65D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 040314C521FB05E8007A65D9 /* main.m */; };
-		040314CF21FB078C007A65D9 /* NSString+zm_Highlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 040314CE21FB078C007A65D9 /* NSString+zm_Highlight.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0402FF9B21FE96F3008F4A47 /* Faceexpression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Faceexpression.plist; sourceTree = "<group>"; };
+		0402FFA321FEE5D5008F4A47 /* NSString+ZMRichText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZMRichText.h"; sourceTree = "<group>"; };
+		0402FFA421FEE5D5008F4A47 /* NSString+ZMRichText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZMRichText.m"; sourceTree = "<group>"; };
 		040314B321FB05E6007A65D9 /* RichText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040314B621FB05E6007A65D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		040314B721FB05E6007A65D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,8 +31,6 @@
 		040314C221FB05E8007A65D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		040314C421FB05E8007A65D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		040314C521FB05E8007A65D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		040314CD21FB078C007A65D9 /* NSString+zm_Highlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+zm_Highlight.h"; sourceTree = "<group>"; };
-		040314CE21FB078C007A65D9 /* NSString+zm_Highlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+zm_Highlight.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				040314C121FB05E8007A65D9 /* LaunchScreen.storyboard */,
 				040314C421FB05E8007A65D9 /* Info.plist */,
 				040314C521FB05E8007A65D9 /* main.m */,
+				0402FF9B21FE96F3008F4A47 /* Faceexpression.plist */,
 			);
 			path = RichText;
 			sourceTree = "<group>";
@@ -78,8 +81,8 @@
 		040314CC21FB0736007A65D9 /* RichText */ = {
 			isa = PBXGroup;
 			children = (
-				040314CD21FB078C007A65D9 /* NSString+zm_Highlight.h */,
-				040314CE21FB078C007A65D9 /* NSString+zm_Highlight.m */,
+				0402FFA321FEE5D5008F4A47 /* NSString+ZMRichText.h */,
+				0402FFA421FEE5D5008F4A47 /* NSString+ZMRichText.m */,
 			);
 			path = RichText;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				040314C321FB05E8007A65D9 /* LaunchScreen.storyboard in Resources */,
+				0402FF9C21FE96F3008F4A47 /* Faceexpression.plist in Resources */,
 				040314C021FB05E8007A65D9 /* Assets.xcassets in Resources */,
 				040314BE21FB05E6007A65D9 /* Main.storyboard in Resources */,
 			);
@@ -155,9 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				040314BB21FB05E6007A65D9 /* ViewController.m in Sources */,
+				0402FFA521FEE5D5008F4A47 /* NSString+ZMRichText.m in Sources */,
 				040314C621FB05E8007A65D9 /* main.m in Sources */,
 				040314B821FB05E6007A65D9 /* AppDelegate.m in Sources */,
-				040314CF21FB078C007A65D9 /* NSString+zm_Highlight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
